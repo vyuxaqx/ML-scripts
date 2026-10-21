@@ -400,9 +400,9 @@ str.startWorker = function()
 end
 
 str.repSpeedSlider = str:AddSlider("Reps/s", function(value)
-    str.repSpeed = math.clamp(math.floor(value), 1, 100)
-end, {min = 1, max = 100})
-str.repSpeedSlider:Set(40)
+    str.repSpeed = math.clamp(math.floor(value), 1, 200)
+end, {min = 1, max = 200})
+str.repSpeedSlider:Set(80)
 
 str:AddSwitch("Controlled Speed", function(state)
     str.pingControl = state
